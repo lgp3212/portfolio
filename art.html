@@ -20,7 +20,7 @@
             top: 0;
             width: 40%;
             height: 100%;
-            background-position: left;
+            background-position: right;
             background-size: cover;
             background-image: url("content/sketch2.png");
         }
@@ -56,10 +56,11 @@
         }
 
         .content-section {
-            background-image: url("content/ss2.png");
+            background-color: white;
             background-size: certain;
             background-position: left;
-            margin: 75px 0px 75px 75px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 100px 50px 75px 75px;
             padding: 20px;
             min-height: 20vh;
             color: #333;
@@ -72,12 +73,6 @@
             color: #333;
         }
 
-        .content-footer {
-            text-align: right;
-            padding: 10px 40px;
-            background: white;
-            font-size: 14px;
-        }
 
         @media screen and (max-width: 768px) {
 
@@ -117,21 +112,23 @@
             }
 
             .main-content {
-                margin-left: 0;
-                margin-top: 550px;
-                background: white;
-                min-height: calc(100vh - 420px);
+                background: transparent;
+                margin-top: 600px;
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-bottom: 50px;
                 padding: 20px;
             }
 
             .content-section {
-                background: white;
-                margin: 20px 0;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                min-height: auto;
+                background-color: white;
+                margin-bottom: 40px;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 20px 20px;
+                color: #333;
             }
+
 
             .nav-top {
                 display: none;
@@ -150,24 +147,23 @@
     </div>
     <div class="main-content">
 
-
         <div class="content-section" id="home">
-            <i>AP Thinks She Loves Me</i>
+            piano____<i>Thanks Coco (Voices)</i>
             <audio controls style="width: 100%; margin: 20px 0;">
                 <source src="content/annabel.wav" type="audio/wav">
             </audio>
         </div>
 
         <div class="content-section" id="home">
-            <i>New York County Family Court</i>
+            musique_concrète____<i>New York County Family Court</i>
             <audio controls style="width: 100%; margin: 20px 0;">
                 <source src="content/New York County Family Court.wav" type="audio/wav">
             </audio>
         </div>
 
         <div class="content-section" id="home">
-            <p>Moving Past Reductive
-                Rhetoric When Categorizing the Musical Avant-Garde</p>
+            <p>words____"Moving Past Reductive
+                Rhetoric When Categorizing the Musical Avant-Garde"</p>
             <a href="final.pdf" target="_blank"
                 style="color: #c14646; text-decoration: underline; font-size: 16px;">01110000011001000110011000100000</a>
         </div>
