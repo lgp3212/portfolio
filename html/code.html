@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lindsey Pietrewicz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+
+    .page-header {
+      background: white;
+      padding: 30px 130px 0px;
+      text-align: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .back-arrow {
+      text-align: right;
+      padding: 10px 0;
+    }
+
+    .back-arrow a {
+      color: #c14646;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .back-arrow a:hover {
+      color: #553C9A;
+    }
+
+
+    .section-title {
+      font-size: 20px;
+      margin-bottom: 80px;
+      color: #333;
+    }
+
+
+    .content-footer {
+      text-align: right;
+      padding: 10px 40px;
+      background: white;
+      font-size: 14px;
+    }
+
+
+    .whitimg {
+      background-color: white;
+      position: relative;
+      padding-bottom: 100px;
+    }
+
+    .bio-section {
+      margin-bottom: 40px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #c14646;
+
+    }
+
+    .favorites-section {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .social-links {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 100;
+    }
+
+    .social-links a {
+      color: #2d5a3d;
+      text-decoration: none;
+      font-size: 16px;
+      margin-right: 20px;
+    }
+
+    .social-links a:hover {
+      color: #553C9A;
+    }
+
+    .terminal-section {
+      background-color: white;
+      color: #333;
+      font-family: "Inconsolata", monospace;
+      padding-left: 20px;
+      padding-top: 50px;
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .terminal-header {
+      color: #888;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .prompt {
+      color: #c14646;
+    }
+
+    .directory {
+      color: #553C9A;
+    }
+
+    .file {
+      color: #2d5a3d;
+    }
+
+    .comment {
+      color: #666;
+    }
+
+    .terminal-section a {
+      color: #553C9A;
+      text-decoration: none;
+    }
+
+    .terminal-section a:hover {
+      color: #c14646;
+      text-decoration: underline;
+    }
+
+    .cursor {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      50% {
+        opacity: 1;
+      }
+
+      51%,
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .page-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        z-index: 100;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        box-sizing: border-box;
+      }
+
+      .back-arrow {
+        position: fixed;
+        top: 80px;
+        right: 20px;
+        z-index: 101;
+        background: white;
+        padding: 5px;
+      }
+
+      .whitimg {
+        margin-top: 140px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 150px;
+      }
+
+      .terminal-section {
+        padding-left: 10px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        font-size: 12px;
+        line-height: 1.4;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-header">\n"I LEARNED HTML TO MAKE THIS WEBSITE"</div>
+  <div class="back-arrow">
+    <a href="home.html">01001000010011110100110101000101 "HOME"</a>
+  </div>
+
+
+
+  <div class="whitimg">
+
+    <div class="terminal-section">
+      <div class="terminal-header">lindsey@portfolio:~$</div>
+
+      <div><span class="prompt">$</span> ls projects/</div>
+      <div><span class="directory">audio-processing/</span></div>
+      <div><span class="directory">data-science/</span></div>
+      <div><span class="directory">web-development/</span></div>
+      <br>
+
+      <div><span class="prompt">$</span> cat projects/README.md</div>
+      <div><span class="comment"># Selected Projects</span></div>
+      <br>
+
+      <div><span class="comment">## Audio Processing</span></div>
+      <div>- <a href="https://github.com/lgp3212/stem_mixer" target="_blank">stem-mixer</a> <span class="comment">#
+          librosa, numpy </span></div>
+      <div>- <a href="https://github.com/lgp3212/bayesian-beats" target="_blank">bayesian-beats</a> <span
+          class="comment"># supercollider, tensorflow </span></div>
+      <br>
+
+      <div><span class="comment">## Data Science</span></div>
+      <div>- <a href="https://github.com/lgp3212/rmp" target="_blank">rate-my-professor</a> <span class="comment"># pca,
+          logistic regression, scipy </span></div>
+      <div>- <a href="https://github.com/lgp3212/playlist-generator" target="_blank">playlist-generator</a> <span
+          class="comment"># matplotlib, pandas, sklearn</span></div>
+      <br>
+
+      <div><span class="comment">## Web Development</span></div>
+      <div>- <a href="https://github.com/lgp3212/runsafe-ai" target="_blank">runsafe-ai</a> <span class="comment">#
+          postgres, google maps api, react </span></div>
+      <div>- <a href="https://github.com/lgp3212/portfolio" target="_blank">portfolio</a> <span class="comment"># html,
+          css</span></div>
+      <br>
+
+      <div><span class="prompt">$</span> git status</div>
+      <div>On branch main</div>
+      <div>Your branch is up to date with 'origin/main'.</div>
+      <div>nothing to commit, working tree clean</div>
+      <br>
+
+      <div><span class="prompt">$</span> echo "I learned HTML to make this website"</div>
+      <div>I learned HTML to make this website</div>
+      <br>
+
+      <div><span class="prompt">$</span> <span class="cursor">█</span></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

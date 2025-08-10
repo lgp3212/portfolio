@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lindsey Pietrewicz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: right;
+      background-size: cover;
+      background-image: url("../content/IMG_4864.jpg");
+      height: 675px;
+      opacity: 0.7;
+      position: relative;
+    }
+
+    .nav-top {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      padding: 10px;
+    }
+
+    .nav-link {
+      display: block;
+      color: #c14646;
+      text-decoration: underline;
+      margin-bottom: 0px;
+      font-family: inherit;
+      font-size: 14px;
+    }
+
+    .nav-link:hover {
+      color: #553C9A;
+    }
+
+    .nav-bottom-right {
+      position: fixed;
+      z-index: 1000;
+      padding: 10px;
+    }
+
+    .nav-bottom-right p {
+      margin: 0;
+      color: #333;
+    }
+
+    @media screen and (max-width: 550px) {
+
+      .bgimg {
+        height: 82vh;
+        background-size: 160%;
+        background-position: right;
+      }
+
+      .nav-top {
+        padding: 5px;
+        font-size: 14px;
+      }
+
+      .nav-link {
+        font-size: 14px;
+        margin-bottom: 2px;
+        line-height: 1.2;
+      }
+
+      footer {
+        padding: 5px;
+        font-size: 10px;
+      }
+
+      body {
+        font-size: 12px;
+      }
+
+      footer p {
+        display: none;
+      }
+
+      .nav-bottom-right {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header class="bgimg" id="home">
+  </header>
+
+  <footer
+    style="display: flex; justify-content: space-between; align-items: flex-end; padding: 10px; background: white; font-size: 14px;">
+    <div class="nav-top" style="position: static; padding: 0;">
+      <a href="#" class="nav-link">01001000010011110100110101000101 "HOME"</a>
+      <a href="me.html" class="nav-link">0100110101000101 "ME"</a>
+      <a href="code.html" class="nav-link">01000011010011110100010001000101 "CODE"</a>
+      <a href="art.html" class="nav-link">010000010101001001010100 "ART"</a>
+    </div>
+
+    <div class="nav-bottom-right" style="position: static; padding: 0;">
+      <p>DATA ENGINEER + CREATIVE</p>
+      <p>DATA ENGINEER + CREATIVE</p>
+      <p>DATA ENGINEER + CREATIVE</p>
+      <p>DATA ENGINEER + CREATIVE</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
