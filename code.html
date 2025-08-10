@@ -24,9 +24,11 @@
     }
 
     .back-arrow {
+      position: relative;
       text-align: right;
       padding: 10px 0;
     }
+
 
     .back-arrow a {
       color: #c14646;
@@ -152,7 +154,7 @@
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen {
 
       .page-header {
         position: fixed;
@@ -185,8 +187,8 @@
       }
 
       .terminal-section {
-        padding-left: 10px;
-        padding-top: 20px;
+        padding-left: 0px;
+        padding-top: 0px;
         padding-bottom: 50px;
         font-size: 12px;
         line-height: 1.4;
@@ -197,7 +199,7 @@
 
 <body>
 
-  <div class="page-header">\n"I LEARNED HTML TO MAKE THIS <br>WEBSITE"</div>
+  <div class="page-header">\n"I LEARNED HTML TO <br> MAKE THIS SITE"</div>
   <div class="back-arrow">
     <a href="index.html">01001000010011110100110101000101 "HOME"</a>
   </div>
@@ -246,8 +248,8 @@
       <div>nothing to commit, working tree clean</div>
       <br>
 
-      <div><span class="prompt">$</span> echo "I learned HTML to make this website"</div>
-      <div>I learned HTML to make this website</div>
+      <div><span class="prompt">$</span> echo "I learned HTML to make this site"</div>
+      <div>I learned HTML to make this site</div>
       <br>
 
       <div><span class="prompt">$</span> <span class="cursor">█</span></div>
