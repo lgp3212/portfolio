@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lindsey Pietrewicz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .page-header {
+            background: white;
+            padding: 30px 130px 0px;
+            text-align: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .back-arrow {
+            text-align: right;
+            padding: 10px 0;
+        }
+
+        .back-arrow a {
+            color: #c14646;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .back-arrow a:hover {
+            color: #553C9A;
+        }
+
+        .main-content {
+            background: white;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        /* Masonry — natural aspect ratios, landscape and portrait mix freely */
+        .tile-grid {
+            column-count: 2;
+            column-gap: 12px;
+        }
+
+        .tile-grid > * {
+            width: 100%;
+            display: block;
+            margin-bottom: 12px;
+            break-inside: avoid;
+        }
+
+        /* Add class "full" to break out of the columns entirely */
+        .tile-grid > .full {
+            column-span: all;
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .page-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: white;
+                padding: 20px;
+                z-index: 100;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                box-sizing: border-box;
+            }
+
+            .back-arrow {
+                position: fixed;
+                top: 60px;
+                right: 20px;
+                z-index: 101;
+                background: white;
+                padding: 5px;
+            }
+
+            .main-content {
+                margin-top: 120px;
+                padding: 15px;
+            }
+
+            .tile-grid {
+                column-count: 1;
+                column-gap: 8px;
+            }
+
+            .tile-grid > * {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-header">"ANTEPENULTIMATE"</div>
+    <div class="back-arrow">
+        <a href="index.html">01001000010011110100110101000101 "HOME"</a>
+    </div>
+
+    <div class="main-content">
+        <div class="tile-grid" id="tile-grid"></div>
+    </div>
+
+    <script>
+        // Full ordered list of every file to display, in the order it should appear.
+        const files = [
+            "walk.jpeg",  "run.MOV",  "miracle.jpeg", "f.jpg",  "blue.jpeg", "bonigen.jpeg", "pw.MOV", "stairs.jpg", "sin.jpeg",
+             "IMG_3550.jpg", "aphex.jpg", "family.jpeg", "likeness.jpeg", "mountain.jpeg", "produk.jpeg", "who.jpg",
+            "art.jpg",  "bug.jpeg", "trent.MOV", "music.jpg",
+            "av.MOV",  "faraz.JPG","feet.jpg", "imt.jpeg", "lindsey.jpeg",  "strawb.jpg",
+            "shoes.jpg", "dance.jpg",  "piano.MOV", "sandy.jpg", "italian.jpg", 
+            "berlin.jpg", "draw.jpeg",  "sciss.jpg", "paris.jpeg","mirror.jpg", "naked.jpg", "leg.jpeg", 
+        ];
+
+        // Any filename listed here breaks out of the columns and goes full width.
+        const fullFiles = new Set(["blue.jpeg", "IMG_3550.jpg", "faraz.JPG", "sciss.jpg", "piano.MOV", "leg.jpeg"
+        ]);
+
+        const videoExts = ["mov", "mp4"];
+
+        const grid = document.getElementById("tile-grid");
+        files.forEach(filename => {
+            const ext = filename.split(".").pop().toLowerCase();
+            let el;
+            if (videoExts.includes(ext)) {
+                el = document.createElement("video");
+                el.src = "content/gallery/" + filename;
+                el.autoplay = true;
+                el.muted = true;
+                el.loop = true;
+                el.playsInline = true;
+            } else {
+                el = document.createElement("img");
+                el.src = "content/gallery/" + filename;
+                el.alt = "";
+            }
+            if (fullFiles.has(filename)) {
+                el.classList.add("full");
+            }
+            grid.appendChild(el);
+        });
+    </script>
+
+</body>
+
+</html>
